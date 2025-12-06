@@ -1,0 +1,6 @@
+@rag_sandbox_HostAddress = http://localhost:5247
+
+GET {{rag_sandbox_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
