@@ -3,7 +3,7 @@ using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
 
-namespace KM.RagSandbox.Tests;
+namespace RagSandbox.IntegrationTests;
 
 public class IntegrationSmokeTests
 {

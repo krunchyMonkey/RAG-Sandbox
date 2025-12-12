@@ -323,9 +323,9 @@ rag-sandbox/
 │       ├── LLM/             # Ollama integration
 │       └── WebScraping/     # HTML parsing implementation
 ├── tests/                    # Test projects
-│   └── SmokeTests/          # Integration smoke tests
+│   └── RagSandbox.IntegrationTests/  # Integration tests
 │       ├── IntegrationSmokeTests.cs
-│       └── SmokeTests.csproj
+│       └── RagSandbox.IntegrationTests.csproj
 ├── postman/                  # API testing artifacts
 │   ├── rag-sandbox.http     # HTTP request examples
 │   └── test-request.ps1     # PowerShell test script
