@@ -13,11 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <!-- Exclude Tests folder from being compiled by this project -->
-    <Compile Remove="Tests/**/*.cs" />
-    <Content Remove="Tests/**/*" />
-    <EmbeddedResource Remove="Tests/**/*" />
-    <None Remove="Tests/**/*" />
+    <!-- Include source files from sibling folders -->
+    <Compile Include="../Application/**/*.cs" />
+    <Compile Include="../Domain/**/*.cs" />
+    <Compile Include="../Infrastructure/**/*.cs" />
   </ItemGroup>
 
 </Project>

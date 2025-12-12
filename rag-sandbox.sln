@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rag-sandbox", "src\RagSandbox\rag-sandbox.csproj", "{F31C503D-5164-4FE2-91FF-C06C0690808A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "src\RagSandbox\Api\Api.csproj", "{F31C503D-5164-4FE2-91FF-C06C0690808A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmokeTests", "tests\SmokeTests\SmokeTests.csproj", "{D2D3F932-B309-4242-B10F-FD440088F225}"
 EndProject
