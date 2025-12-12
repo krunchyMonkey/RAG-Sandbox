@@ -45,10 +45,10 @@ git clone <your-repo-url>
 cd rag-sandbox
 
 # Restore dependencies
-dotnet restore
+dotnet restore rag-sandbox.sln
 
 # Run the service
-dotnet run
+dotnet run --project src/RagSandbox.Api/RagSandbox.Api.csproj
 ```
 
 The service will start on **http://localhost:5247** 🎉
@@ -299,30 +299,65 @@ Streaming responses provide a better user experience, especially with large mode
 
 ### Project Structure
 
+**This project now follows a canonical folder layout for better organization:**
+
 ```
 rag-sandbox/
-├── Api/
-│   └── Controllers/          # API endpoints
-├── Application/
-│   ├── Chat/                 # Chat service logic
-│   └── WebContent/           # Web scraping
-├── Domain/
-│   ├── Chat/                 # Domain models
-│   └── WebContent/
-├── Infrastructure/
-│   ├── LLM/                  # Ollama integration
-│   └── WebScraping/          # HTML parsing
-└── Program.cs                # App entry point
+├── README.md                 # Project documentation
+├── .gitignore                # Git ignore rules
+├── rag-sandbox.sln           # Visual Studio solution file
+├── src/                      # Source code
+│   ├── RagSandbox.Api/      # API project (entry point)
+│   │   ├── Controllers/     # API endpoints
+│   │   ├── Program.cs       # App entry point
+│   │   ├── RagSandbox.Api.csproj
+│   │   ├── appsettings.json
+│   │   └── Properties/
+│   ├── RagSandbox.Application/  # Service layer
+│   │   ├── Chat/            # Chat service logic
+│   │   └── WebContent/      # Web scraping interfaces
+│   ├── RagSandbox.Domain/   # Domain models
+│   │   ├── Chat/            # Chat domain models
+│   │   └── WebContent/      # Web content models
+│   └── RagSandbox.Infrastructure/  # Infrastructure layer
+│       ├── LLM/             # Ollama integration
+│       └── WebScraping/     # HTML parsing implementation
+├── tests/                    # Test projects
+│   └── RagSandbox.IntegrationTests/  # Integration tests
+│       ├── IntegrationSmokeTests.cs
+│       └── RagSandbox.IntegrationTests.csproj
+├── postman/                  # API testing artifacts
+│   ├── rag-sandbox.http     # HTTP request examples
+│   └── test-request.ps1     # PowerShell test script
+└── ops/                      # Operational scripts (future use)
+```
+
+### Building and Running After Restructure
+
+The restructure preserves all functionality. To build and run:
+
+```bash
+# Restore dependencies
+dotnet restore rag-sandbox.sln
+
+# Build the solution
+dotnet build rag-sandbox.sln --configuration Release
+
+# Run the application
+dotnet run --project src/RagSandbox.Api/RagSandbox.Api.csproj
+
+# Run tests (requires service running on localhost:8080)
+dotnet test rag-sandbox.sln
 ```
 
 ### Run Tests
 
 ```bash
-# Run all tests
-dotnet test
+# Run all tests (requires service running on localhost:8080)
+dotnet test rag-sandbox.sln
 
 # Run with coverage
-dotnet test --collect:"XPlat Code Coverage"
+dotnet test rag-sandbox.sln --collect:"XPlat Code Coverage"
 ```
 
 ---
