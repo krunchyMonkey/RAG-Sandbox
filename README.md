@@ -48,7 +48,7 @@ cd rag-sandbox
 dotnet restore rag-sandbox.sln
 
 # Run the service
-dotnet run --project src/Api/Api.csproj
+dotnet run --project src/RagSandbox.Api/RagSandbox.Api.csproj
 ```
 
 The service will start on **http://localhost:5247** 🎉
@@ -307,21 +307,21 @@ rag-sandbox/
 ├── .gitignore                # Git ignore rules
 ├── rag-sandbox.sln           # Visual Studio solution file
 ├── src/                      # Source code
-│   ├── Api/                 # API project (entry point)
+│   ├── RagSandbox.Api/      # API project (entry point)
 │   │   ├── Controllers/     # API endpoints
 │   │   ├── Program.cs       # App entry point
-│   │   ├── Api.csproj       # API project file
+│   │   ├── RagSandbox.Api.csproj
 │   │   ├── appsettings.json
 │   │   └── Properties/
-│   ├── Application/         # Service layer
+│   ├── RagSandbox.Application/  # Service layer
 │   │   ├── Chat/            # Chat service logic
-│   │   └── WebContent/      # Web scraping
-│   ├── Domain/              # Domain models
+│   │   └── WebContent/      # Web scraping interfaces
+│   ├── RagSandbox.Domain/   # Domain models
 │   │   ├── Chat/            # Chat domain models
 │   │   └── WebContent/      # Web content models
-│   └── Infrastructure/      # Infrastructure layer
+│   └── RagSandbox.Infrastructure/  # Infrastructure layer
 │       ├── LLM/             # Ollama integration
-│       └── WebScraping/     # HTML parsing
+│       └── WebScraping/     # HTML parsing implementation
 ├── tests/                    # Test projects
 │   └── SmokeTests/          # Integration smoke tests
 │       ├── IntegrationSmokeTests.cs
@@ -344,7 +344,7 @@ dotnet restore rag-sandbox.sln
 dotnet build rag-sandbox.sln --configuration Release
 
 # Run the application
-dotnet run --project src/Api/Api.csproj
+dotnet run --project src/RagSandbox.Api/RagSandbox.Api.csproj
 
 # Run tests (requires service running on localhost:8080)
 dotnet test rag-sandbox.sln

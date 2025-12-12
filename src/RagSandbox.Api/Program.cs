@@ -1,7 +1,7 @@
-using KM.RagSandbox.Application.Chat;
-using KM.RagSandbox.Application.WebContent;
-using KM.RagSandbox.Infrastructure.LLM;
-using KM.RagSandbox.Infrastructure.WebScraping;
+using RagSandbox.Application.Chat;
+using RagSandbox.Application.WebContent;
+using RagSandbox.Infrastructure.LLM;
+using RagSandbox.Infrastructure.WebScraping;
 
 var builder = WebApplication.CreateBuilder(args);
 

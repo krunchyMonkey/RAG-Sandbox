@@ -1,6 +1,6 @@
-using KM.RagSandbox.Domain.Chat;
+using RagSandbox.Domain.Chat;
 
-namespace KM.RagSandbox.Application.Chat;
+namespace RagSandbox.Application.Chat;
 
 public interface IChatService
 {

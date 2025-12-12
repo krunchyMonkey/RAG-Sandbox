@@ -1,4 +1,4 @@
-namespace KM.RagSandbox.Domain.WebContent;
+namespace RagSandbox.Domain.WebContent;
 
 public class WebPage
 {

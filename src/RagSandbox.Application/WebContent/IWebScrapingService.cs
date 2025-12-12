@@ -1,4 +1,4 @@
-namespace KM.RagSandbox.Application.WebContent;
+namespace RagSandbox.Application.WebContent;
 
 public interface IWebScrapingService
 {

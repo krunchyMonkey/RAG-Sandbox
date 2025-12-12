@@ -1,9 +1,9 @@
-using KM.RagSandbox.Application.WebContent;
-using KM.RagSandbox.Domain.Chat;
+using RagSandbox.Application.WebContent;
+using RagSandbox.Domain.Chat;
 using System.Collections.Concurrent;
 using System.Runtime.CompilerServices;
 
-namespace KM.RagSandbox.Application.Chat;
+namespace RagSandbox.Application.Chat;
 
 public class ChatService : IChatService
 {

@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>KM.RagSandbox</RootNamespace>
+    <RootNamespace>RagSandbox.Api</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,9 +14,9 @@
 
   <ItemGroup>
     <!-- Include source files from sibling folders -->
-    <Compile Include="../Application/**/*.cs" />
-    <Compile Include="../Domain/**/*.cs" />
-    <Compile Include="../Infrastructure/**/*.cs" />
+    <Compile Include="../RagSandbox.Application/**/*.cs" />
+    <Compile Include="../RagSandbox.Domain/**/*.cs" />
+    <Compile Include="../RagSandbox.Infrastructure/**/*.cs" />
   </ItemGroup>
 
 </Project>

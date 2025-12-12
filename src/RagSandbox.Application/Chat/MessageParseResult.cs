@@ -1,4 +1,4 @@
-namespace KM.RagSandbox.Application.Chat;
+namespace RagSandbox.Application.Chat;
 
 public record MessageParseResult
 {

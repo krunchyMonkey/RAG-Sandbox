@@ -1,4 +1,4 @@
-namespace KM.RagSandbox.Domain.Chat;
+namespace RagSandbox.Domain.Chat;
 
 public class ChatMessage
 {

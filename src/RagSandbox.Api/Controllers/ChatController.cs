@@ -1,8 +1,8 @@
-using KM.RagSandbox.Application.Chat;
-using KM.RagSandbox.Domain.Chat;
+using RagSandbox.Application.Chat;
+using RagSandbox.Domain.Chat;
 using Microsoft.AspNetCore.Mvc;
 
-namespace KM.RagSandbox.Api.Controllers;
+namespace RagSandbox.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

@@ -1,7 +1,7 @@
 using HtmlAgilityPack;
-using KM.RagSandbox.Application.WebContent;
+using RagSandbox.Application.WebContent;
 
-namespace KM.RagSandbox.Infrastructure.WebScraping;
+namespace RagSandbox.Infrastructure.WebScraping;
 
 public class WebScrapingService : IWebScrapingService
 {

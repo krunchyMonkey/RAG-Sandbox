@@ -1,10 +1,10 @@
-using KM.RagSandbox.Application.Chat;
+using RagSandbox.Application.Chat;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace KM.RagSandbox.Infrastructure.LLM;
+namespace RagSandbox.Infrastructure.LLM;
 
 public class OllamaClient : ILlmClient
 {

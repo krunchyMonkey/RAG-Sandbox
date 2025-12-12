@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace KM.RagSandbox.Application.Chat;
+namespace RagSandbox.Application.Chat;
 
 public partial class MessageParser : IMessageParser
 {
