@@ -24,7 +24,7 @@ public class IntegrationSmokeTests
         };
     }
 
-    [Fact]
+    [Fact(DisplayName = "Get available models list")]
     public async Task Test_GetModels_ReturnsSuccess()
     {
         Console.WriteLine($"[SMOKE TEST] Testing GET /api/chat/models...");
@@ -40,7 +40,7 @@ public class IntegrationSmokeTests
         Console.WriteLine($"[SMOKE TEST]   Response: {content}");
     }
 
-    [Fact]
+    [Fact(DisplayName = "Send chat message and receive response")]
     public async Task Test_PostChat_WithSimpleMessage_ReturnsSuccess()
     {
         Console.WriteLine($"[SMOKE TEST] Testing POST /api/chat with model: {_testModel}...");
@@ -66,7 +66,7 @@ public class IntegrationSmokeTests
         Console.WriteLine($"[SMOKE TEST]   Response: {chatResponse.Message}");
     }
 
-    [Fact]
+    [Fact(DisplayName = "Stream chat response using SSE")]
     public async Task Test_PostChatStream_ReturnsSuccess()
     {
         Console.WriteLine($"[SMOKE TEST] Testing POST /api/chat/stream with model: {_testModel}...");
@@ -125,7 +125,7 @@ public class IntegrationSmokeTests
     //     Console.WriteLine($"[SMOKE TEST]   Session ID: {chat.SessionId}");
     // }
 
-    [Fact]
+    [Fact(DisplayName = "Get invalid session returns 404")]
     public async Task Test_GetSession_WithInvalidSession_ReturnsNotFound()
     {
         Console.WriteLine($"[SMOKE TEST] Testing GET /api/chat/session/{{invalidId}}...");
