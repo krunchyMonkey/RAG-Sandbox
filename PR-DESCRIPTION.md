@@ -99,8 +99,8 @@ The restructuring was done in logical, atomic commits:
 
 ✅ **dotnet restore** - Succeeded
 ```
-Restored /home/kristoffer-larue/developer/ai-training/RAG-Sandbox/src/RagSandbox/rag-sandbox.csproj (in 816 ms).
-Restored /home/kristoffer-larue/developer/ai-training/RAG-Sandbox/tests/SmokeTests/SmokeTests.csproj (in 852 ms).
+Restored /home/developer/developer/ai-training/RAG-Sandbox/src/RagSandbox/rag-sandbox.csproj (in 816 ms).
+Restored /home/developer/developer/ai-training/RAG-Sandbox/tests/SmokeTests/SmokeTests.csproj (in 852 ms).
 ```
 
 ✅ **dotnet build --configuration Release** - Succeeded
