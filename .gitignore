@@ -79,3 +79,6 @@ ScaffoldingReadMe.txt
 # Others
 .DS_Store
 Thumbs.db
+
+# Local AI assistant / editor settings
+.claude/settings.local.json
