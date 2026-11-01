@@ -82,3 +82,12 @@ Thumbs.db
 
 # Local AI assistant / editor settings
 .claude/settings.local.json
+
+# Environment secrets, local keys, and generated reports
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
